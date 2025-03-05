@@ -24,7 +24,7 @@ const server = http_1.default.createServer((req, res) => {
                 res.end("Eror reading file!");
                 return;
             }
-            res.writeHead(200, { "content-type": "image/jpeg" });
+            res.writeHead(200, { "Content-type": "image/jpeg" });
             res.end(data);
         });
         return;
