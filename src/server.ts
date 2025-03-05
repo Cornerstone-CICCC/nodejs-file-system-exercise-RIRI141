@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
         return;
       }
 
-      res.writeHead(200, { "content-type": "image/jpeg" });
+      res.writeHead(200, { "Content-type": "image/jpeg" });
       res.end(data);
     });
     return;
